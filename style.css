@@ -1,0 +1,98 @@
+html {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url();
+}
+
+#city-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-city {
+    flex: 1;
+    margin-left: 10rem;
+}
+
+button {
+    flex: 0.5;
+    margin-right: 10rem;
+}
+
+input {
+    height: 30px;
+    border-radius: 15px;
+}
+
+button {
+    height: 35px;
+    border-radius: 15px;
+}
+
+body {
+    background: #262a2b;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
+    cursor: pointer;
+    padding: 1em;
+    background: rgb(43, 43, 43);
+    position: relative;
+    color: white;
+    border-radius: 5px;
+}
+
+ul li::before,
+ul li::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+    width: 105%;
+    transition: all 0.4s;
+}
+
+ul li::before {
+    left: 0%;
+    height: 130%;
+    background: linear-gradient(to right, #021B79, #0575E6);
+}
+
+ul li::after {
+    left: -10%;
+    height: 120%;
+    background: #ffffff56;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+
+ul li:hover::before {
+    transform: translateX(-2.5%);
+}
+
+ul li:hover::after {
+    transform: translateX(15%);
+}
+
+.tilesWrap {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+}
+
+/* New CSS for error message */
+#error-heading {
+    margin-top: 2em;
+    font-size: 2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
